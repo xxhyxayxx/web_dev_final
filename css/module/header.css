@@ -1,0 +1,51 @@
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: url(../../images/main_pc.png) center / cover;
+    min-height: 700px;
+}
+
+.header__box{
+    width: 1280px;
+    margin: 0 auto;
+    padding: 40px 0 0;
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__box_title{
+    font-size: 2.5rem;
+}
+
+.header__box_menu{
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.header__box_menu_list{
+    margin-right: 24px;
+}
+
+.header__box_menu_list:last-child{
+    margin-right: 0;
+}
+
+.header__main_title{
+    font-size: 3.75rem;
+    color: var(--yellow);
+    font-family: var(--josefin);
+}
+
+.header__main_button a{
+    background: var(--red);
+    border-radius: 60px;
+    color: #fff;
+    font-family: var(--josefin);
+    font-size: 1.75rem;
+    padding: 16px 40px;
+}
