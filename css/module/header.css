@@ -1,10 +1,41 @@
 header{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+}
+
+.header_index{
+    justify-content: space-between;
     background: url(../../images/main_pc.png) center / cover;
     min-height: 700px;
+}
+
+.header_about_us{
+    justify-content: flex-start;
+    background: url(../../images/about_us_pc.png) center / cover;
+    min-height: 500px;
+}
+
+.header_recipes{
+    justify-content: flex-start;
+    background: url(../../images/recipes_pc.png) center / cover;
+    min-height: 500px;
+}
+
+.header_recipes_detail{
+    justify-content: flex-start;
+    background: url(../../images/recipes/thai_red_curry_pc.png) center / cover;
+    min-height: 500px;
+}
+
+.header_contact{
+    justify-content: flex-start;
+    background: url(../../images/contact_pc.png) center / cover;
+    min-height: 500px;
+}
+
+.sub_menu_title{
+    padding: 150px 0 0 0;
 }
 
 .header__box{

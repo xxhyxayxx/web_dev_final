@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Foodies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Roboto&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/about_us.css">
+</head>
+<body>
+<header class="header_contact">
+  <div class="header__box">
+    <h1 class="header__box_title"><a href="./">Foodies</a></h1>
+    <nav>
+      <ul class="header__box_menu">
+        <li class="header__box_menu_list"><a href="about_us.html">About Us</a></li>
+        <li class="header__box_menu_list"><a href="recipes.html">Recipes</a></li>
+        <li class="header__box_menu_list"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <h2 class="header__main_title sub_menu_title">Contact</h2>
+</header>
+<main class="contents_box">
+  <h3>Contact</h3>
+  <p>Have something you’d like to let us know?</p>
+  <p>Whether you have a comment on a recipe or an idea to share, we would love to hear from you</p>
+  <form action="">
+    <div>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required minlength="1" maxlength="32">
+    </div>
+    <div>
+      <label for="email">E-mail</label>
+      <input type="email" id="email" pattern=".+@globex\.com" size="30" required>
+    </div>
+    <div>
+      <label for="comment">Comment</label>
+      <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+      <input type="submit" value="send">
+    </div>
+  </form>
+</main>
+<footer>
+  <div class="footer_box">
+    <h2 class="footer_title"><a href="">Foodies</a></h2>
+    <div class="footer_link_box">
+      <nav>
+        <ul class="footer_nav_list">
+          <li><a href="">About us</a></li>
+          <li><a href="">Recipes</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+      <ul class="footer_sns">
+        <li><a href="https://twitter.com/" target="_blank"><img src="images/twitter.svg" alt="Twitter"></a></li>
+        <li><a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg"
+                                                                     alt="Facebook"></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg"
+                                                                      alt="Instagram"></a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="footer_copy">Copyright © 2021 Foodies. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

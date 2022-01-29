@@ -1,0 +1,86 @@
+@import url(module/header.css);
+@import url(module/footer.css);
+
+.wrapper{
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 100px 0 0;
+}
+
+.contents_title{
+    color: var(--red);
+    font-family: var(--josefin);
+    font-size: 2.5rem;
+}
+
+.contents_ingredients{
+    padding: 0 68px 0 0;
+}
+
+.contents_instructions{
+    padding: 0 0 0 68px;
+    border-left: 2px solid #e4e4e4;
+}
+
+.contents_ingredients_box{
+    min-width: 380px;
+    padding: 32px 0 0;
+}
+
+.contents_ingredients_title{
+    font-size: 1.25rem;
+    font-family: var(--josefin);
+    color: var(--orange);
+    padding: 0 0 8px 0;
+}
+
+.contents_ingredients_list li{
+    padding: 12px 0 0 0;
+    font-size: 1rem;
+    letter-spacing: 0.01rem;
+}
+
+.contents_ingredients_list li:before{
+    display:inline-block;
+    vertical-align: middle;
+    content:'';
+    width:5px;
+    height:5px;
+    background: #c4c4c4;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.contents_instructions_list{
+    counter-reset:number;
+    padding: 32px 0 0;
+}
+
+.contents_instructions_list li {
+    position: relative;
+    line-height: 1.5rem;
+    padding: 0 0 16px 36px;
+}
+
+.contents_instructions_list li:before{
+    /* 以下数字をつける */
+    position: absolute;
+    counter-increment: number;
+    content: counter(number);
+    /*以下数字のデザイン変える*/
+    display:inline-block;
+    background: #c4c4c4;
+    color: #fff;
+    font-family: var(--josefin);
+    border-radius: 50%;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    line-height: 26px;
+    text-align: center;
+    /*以下 上下中央寄せのため*/
+    top: 25%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
