@@ -42,7 +42,7 @@
     color: #fff;
     font-size: 5.625rem;
     bottom: -70px;
-    right: 50px;
+    right: 42px;
 }
 
 .contents_img img{
@@ -63,7 +63,7 @@
 
 .contents_img{
     position: absolute;
-    left: 0;
+    right: 128px;
     bottom:0;
 }
 
@@ -80,8 +80,7 @@
 
 .our_history_des_box{
     grid-column: 2 / 3;
-    max-width: 520px;
-    padding: 140px 0 0 60px;
+    padding: 140px 0 0 120px;
 }
 
 .our_history_img_box_bg{
@@ -97,7 +96,7 @@
 
 .our_history_img{
     position: absolute;
-    right: 0;
+    left: 128px;
     top:77px;
 }
 

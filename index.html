@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Foodies</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,16 +15,38 @@
 <header class="header_index">
     <div class="header__box">
         <h1 class="header__box_title"><a href="./">Foodies</a></h1>
-        <nav>
+        <nav class="pc_header">
             <ul class="header__box_menu">
                 <li class="header__box_menu_list"><a href="about_us.html">About Us</a></li>
                 <li class="header__box_menu_list"><a href="recipes.html">Recipes</a></li>
-                <li class="header__box_menu_list"><a href="">Contact</a></li>
+                <li class="header__box_menu_list"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div id="nav-wrapper" class="nav-wrapper sp_header">
+            <div class="hamburger" id="js-hamburger">
+                <span class="hamburger__line hamburger__line--1"></span>
+                <span class="hamburger__line hamburger__line--2"></span>
+                <span class="hamburger__line hamburger__line--3"></span>
+            </div>
+            <nav class="sp-nav">
+                <ul class="sp_menu">
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="footer_sns">
+                    <li><a href="https://twitter.com/" target="_blank"><img src="images/twitter.svg" alt="Twitter"></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg"
+                                                                                 alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg"
+                                                                                  alt="Instagram"></a></li>
+                </ul>
+            </nav>
+            <div class="black-bg" id="js-black-bg"></div>
+        </div>
     </div>
     <h2 class="header__main_title">What's on the menu today?</h2>
-    <div class="header__main_button"><a href="">Find a recipe</a></div>
+    <div class="header__main_button"><a href="recipes.html">Find a recipe</a></div>
 </header>
 <main>
     <section class="contents__box">
@@ -32,13 +55,13 @@
             guides, and meal plans, drawing over 15 million readers each month from around the world. </p>
         <p class="contents__box_des">We’re supported by a group of recipe developers, food writers, recipe and product
             testers, photographers, and other creative professionals.</p>
-        <p class="contents__box_link"><a href="">Learn More...</a></p>
+        <p class="contents__box_link"><a href="about_us.html">Learn More...</a></p>
     </section>
     <section class="contents__box">
         <h3 class="contents__box_title">Newest Recipes</h3>
         <ul class="contents__box_list">
             <li>
-                <a href="">
+                <a href="recipe_detail.html">
                     <dl>
                         <dt class="recipe__box_image"><img src="./images/recipes/recipe1.png" alt="Thai Red Curry"></dt>
                         <dt class="recipe__box_category">Asian Food</dt>
@@ -52,7 +75,7 @@
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="recipe_detail.html">
                     <dl>
                         <dt class="recipe__box_image"><img src="./images/recipes/recipe2.png"
                                                            alt="Chocolate Chip Cookies"></dt>
@@ -134,7 +157,7 @@
                 </dl>
             </li>
         </ul>
-        <div class="recipe_button"><a href="">Learn More</a></div>
+        <div class="recipe_button"><a href="recipes.html">Learn More</a></div>
     </section>
 </main>
 <footer>
@@ -159,5 +182,20 @@
     </div>
     <p class="footer_copy">Copyright © 2021 Foodies. All Rights Reserved.</p>
 </footer>
+<script>
+    window.onload = function () {
+        //  読み込みが完了したら実行したい処理を記述
+        const nav = document.getElementById('nav-wrapper');
+        const hamburger = document.getElementById('js-hamburger');
+        const blackBg = document.getElementById('js-black-bg');
+        hamburger.addEventListener('click', function () {
+            nav.classList.toggle('open');
+        });
+// 黒背景をクリックしたら
+        blackBg.addEventListener('click', function () {
+            nav.classList.remove('open');
+        });
+    };
+</script>
 </body>
 </html>

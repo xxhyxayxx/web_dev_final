@@ -15,7 +15,6 @@ footer{
 .footer_title{
     font-family: var(--josefin);
     font-size: 3rem;
-
 }
 
 .footer_nav_list{
@@ -52,4 +51,26 @@ footer{
     text-align: center;
     font-size: 1rem;
     padding: 120px 0 20px;
+}
+
+@media screen and (max-width: 1280px){
+    .footer_box{
+        width: 100%;
+        padding: 60px 40px 0;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .footer_box{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .footer_title{
+        text-align: center;
+    }
+
+    .footer_sns{
+        justify-content: center;
+    }
 }

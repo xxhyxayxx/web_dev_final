@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Roboto&display=swap"
         rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/about_us.css">
+  <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
 <header class="header_contact">
@@ -25,24 +25,24 @@
   <h2 class="header__main_title sub_menu_title">Contact</h2>
 </header>
 <main class="contents_box">
-  <h3>Contact</h3>
-  <p>Have something you’d like to let us know?</p>
-  <p>Whether you have a comment on a recipe or an idea to share, we would love to hear from you</p>
-  <form action="">
-    <div>
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required minlength="1" maxlength="32">
+  <h3 class="contents_title">Contact</h3>
+  <p class="contents_text">Have something you’d like to let us know?</p>
+  <p class="contents_text">Whether you have a comment on a recipe or an idea to share, we would love to hear from you</p>
+  <form action="" class="contents_form">
+    <div class="form_box">
+      <label for="name" class="form_label">Name</label>
+      <input type="text" id="name" name="name" required minlength="1" maxlength="32" class="form_input_area">
     </div>
-    <div>
-      <label for="email">E-mail</label>
-      <input type="email" id="email" pattern=".+@globex\.com" size="30" required>
+    <div class="form_box">
+      <label for="email" class="form_label">E-mail</label>
+      <input type="email" id="email" pattern=".+@globex\.com" size="30" required class="form_input_area">
     </div>
-    <div>
-      <label for="comment">Comment</label>
-      <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+    <div class="form_box">
+      <label for="comment" class="form_label">Comment</label>
+      <textarea name="comment" id="comment" cols="30" rows="10" class="form_input_area"></textarea>
     </div>
-    <div>
-      <input type="submit" value="send">
+    <div class="form_box">
+      <input type="submit" value="Send" class="form_submit">
     </div>
   </form>
 </main>
