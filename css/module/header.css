@@ -46,7 +46,7 @@ header{
     padding: 150px 0 0 0;
 }
 
-.header__box{
+.header_box{
     width: 1280px;
     margin: 0 auto;
     padding: 40px 0 0;
@@ -57,30 +57,30 @@ header{
     align-items: center;
 }
 
-.header__box_title{
+.header_title{
     font-size: 2.5rem;
 }
 
-.header__box_menu{
+.header_menu{
     display: flex;
     font-size: 1.5rem;
 }
 
-.header__box_menu_list{
+.header_menu_list{
     margin-right: 24px;
 }
 
-.header__box_menu_list:last-child{
+.header_menu_list:last-child{
     margin-right: 0;
 }
 
-.header__main_title{
+.header_main_title{
     font-size: 3.75rem;
     color: var(--yellow);
     font-family: var(--josefin);
 }
 
-.header__main_button a{
+.header_main_button a{
     background: var(--red);
     border-radius: 60px;
     color: #fff;
@@ -208,17 +208,22 @@ black-bg(ハンバーガーメニュー解除用bg)
 
 
 @media screen and (max-width: 1280px){
-    .header__box{
+    .header_box{
         width: 100%;
         padding: 40px 40px 0;
     }
 }
 
 @media screen and (max-width: 980px){
-    .header__main_title{
+    .header_main_title{
         font-size: 2.75rem;
         text-align: center;
         padding: 0 8px 0;
+        box-sizing: border-box;
+    }
+
+    .sub_menu_title{
+        padding: 150px 0 0;
     }
 }
 

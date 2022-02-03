@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Foodies</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,21 +13,43 @@
 </head>
 <body>
 <header class="header_recipes_detail">
-  <div class="header__box">
-    <h1 class="header__box_title"><a href="./">Foodies</a></h1>
-    <nav>
-      <ul class="header__box_menu">
-        <li class="header__box_menu_list"><a href="about_us.html">About Us</a></li>
-        <li class="header__box_menu_list"><a href="recipes.html">Recipes</a></li>
-        <li class="header__box_menu_list"><a href="">Contact</a></li>
+  <div class="header_box">
+    <h1 class="header_title"><a href="./">Foodies</a></h1>
+    <nav class="pc_header">
+      <ul class="header_menu">
+        <li class="header_menu_list"><a href="about_us.html">About Us</a></li>
+        <li class="header_menu_list"><a href="recipes.html">Recipes</a></li>
+        <li class="header_menu_list"><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <div id="nav-wrapper" class="nav-wrapper sp_header">
+      <div class="hamburger" id="js-hamburger">
+        <span class="hamburger__line hamburger__line--1"></span>
+        <span class="hamburger__line hamburger__line--2"></span>
+        <span class="hamburger__line hamburger__line--3"></span>
+      </div>
+      <nav class="sp-nav">
+        <ul class="sp_menu">
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="footer_sns">
+          <li><a href="https://twitter.com/" target="_blank"><img src="images/twitter.svg" alt="Twitter"></a></li>
+          <li><a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg"
+                                                                       alt="Facebook"></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg"
+                                                                        alt="Instagram"></a></li>
+        </ul>
+      </nav>
+      <div class="black-bg" id="js-black-bg"></div>
+    </div>
   </div>
-  <h2 class="header__main_title sub_menu_title">Thai Red Curry</h2>
+  <h2 class="header_main_title sub_menu_title">Thai Red Curry</h2>
 </header>
 <main class="wrapper">
   <section class="contents_ingredients">
-    <h3 class="contents_title">Ingredients</h3>
+    <h3 class="contents_title recipes_detail_title">Ingredients</h3>
     <dl class="contents_ingredients_box">
       <dt class="contents_ingredients_title">Thai Red Curry</dt>
       <dd>
@@ -56,7 +79,7 @@
     </dl>
   </section>
   <section class="contents_instructions">
-    <h3 class="contents_title">Instructions</h3>
+    <h3 class="contents_title recipes_detail_title">Instructions</h3>
     <ol class="contents_instructions_list">
       <li>Heat oil in a large heavy based skillet over medium high heat.</li>
       <li>Add curry paste and Extras (if using jar paste) and cook for about 2 minutes so it "dries out"</li>
@@ -92,5 +115,20 @@
   </div>
   <p class="footer_copy">Copyright © 2021 Foodies. All Rights Reserved.</p>
 </footer>
+<script>
+  window.onload = function () {
+    //  読み込みが完了したら実行したい処理を記述
+    const nav = document.getElementById('nav-wrapper');
+    const hamburger = document.getElementById('js-hamburger');
+    const blackBg = document.getElementById('js-black-bg');
+    hamburger.addEventListener('click', function () {
+      nav.classList.toggle('open');
+    });
+// 黒背景をクリックしたら
+    blackBg.addEventListener('click', function () {
+      nav.classList.remove('open');
+    });
+  };
+</script>
 </body>
 </html>
