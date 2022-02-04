@@ -47,30 +47,26 @@
     </div>
     <h2 class="header_main_title sub_menu_title">About Us</h2>
 </header>
-<main class="contents_box">
-    <section class="about_us_des_box">
-        <h3 class="contents_title about_us_title">About Us</h3>
-        <p class="contents_text">Foodies is here to help you cook delicious meals with less stress and more joy. We offer recipes and cooking
+<main>
+    <section class="contents_box">
+        <div class="contents_des_box about_us_des_box">
+            <h3 class="contents_title about_us_title">About Us</h3>
+            <p class="contents_text">Foodies is here to help you cook delicious meals with less stress and more joy. We offer recipes and cooking
             advice for home cooks, by home cooks. Helping create “kitchen wins” is what we’re all about.</p>
-        <p class="contents_text">Foodies was founded in 2003 by Elise Bauer as a home cooking blog to record her favorite family recipes.
+            <p class="contents_text">Foodies was founded in 2003 by Elise Bauer as a home cooking blog to record her favorite family recipes.
             Today, Simply Recipes has grown into a trusted resource for home cooks with more than 3,000 tested recipes,
             guides, and meal plans, drawing over 15 million readers each month from around the world. We’re supported by
             a diverse group of recipe developers, food writers, recipe and product testers, photographers, and other
             creative professionals.</p>
+        </div>
+        <div class="contents_img_box about_us_img_box"><img src="images/about_us_img.png" alt="About Us"></div>
     </section>
-    <section class="contents_img_box">
-        <span class="contents_img_box_bg"></span>
-        <div class="contents_img"><img src="images/about_us.png" alt="About Us"></div>
-        <p class="contents_sub_title">About Us</p>
-    </section>
-    <section class="our_history_img_box">
-        <span class="our_history_img_box_bg"></span>
-        <div class="our_history_img"><img src="images/our_history.png" alt="Our History"></div>
-        <p class="our_history_sub_title">Our History</p>
-    </section>
-    <section class="our_history_des_box">
-        <h3 class="contents_title our_history_title">Our History</h3>
-        <p class="our_history_text">Elise Bauer was a busy Silicon Valley executive when she became sick with a flu that wouldn’t go away in 2001. In 2003, Elise moved home with her parents and lived with them for several years, recovering from chronic fatigue and documenting her parents’ cooking on Simply Recipes. Over the years, what started as a small blog grew to reach millions of readers every month! In 2020, Foodies was acquired by Dotdash, a New York-based media company.</p>
+    <section class="contents_box">
+        <div class="contents_img_box"><img src="images/our_history_img.png" alt=""></div>
+        <div class="contents_des_box our_history_des_box">
+            <h3 class="contents_title our_history_title">Our History</h3>
+            <p class="contents_text">Elise Bauer was a busy Silicon Valley executive when she became sick with a flu that wouldn’t go away in 2001. In 2003, Elise moved home with her parents and lived with them for several years, recovering from chronic fatigue and documenting her parents’ cooking on Simply Recipes. Over the years, what started as a small blog grew to reach millions of readers every month! In 2020, Foodies was acquired by Dotdash, a New York-based media company.</p>
+        </div>
     </section>
 </main>
 <footer>
@@ -104,7 +100,7 @@
         hamburger.addEventListener('click', function () {
             nav.classList.toggle('open');
         });
-// 黒背景をクリックしたら
+        // 黒背景をクリックしたら
         blackBg.addEventListener('click', function () {
             nav.classList.remove('open');
         });
