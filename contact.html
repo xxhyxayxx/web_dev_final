@@ -51,22 +51,23 @@
   <h3 class="contents_title">Contact</h3>
   <p class="contents_text">Have something you’d like to let us know?</p>
   <p class="contents_text">Whether you have a comment on a recipe or an idea to share, we would love to hear from you</p>
-  <form action="" class="contents_form">
-    <div class="form_box">
-      <label for="name" class="form_label">Name</label>
-      <input type="text" id="name" name="name" required minlength="1" maxlength="32" class="form_input_area">
+  <form id="form" action="/">
+    <div class="input-control">
+      <label for="username">Name</label>
+      <input id="username" name="username" type="text" aria-required="true">
+      <div class="error"></div>
     </div>
-    <div class="form_box">
-      <label for="email" class="form_label">E-mail</label>
-      <input type="email" id="email" pattern=".+@globex\.com" size="30" required class="form_input_area">
+    <div class="input-control">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="text" aria-required="true">
+      <div class="error"></div>
     </div>
-    <div class="form_box">
-      <label for="comment" class="form_label">Comment</label>
-      <textarea name="comment" id="comment" cols="30" rows="10" class="form_input_area"></textarea>
+    <div class="input-control">
+      <label for="comment">Comment</label>
+      <textarea name="comment" id="comment" cols="30" rows="10" aria-required="true"></textarea>
+      <div class="error"></div>
     </div>
-    <div class="form_box">
-      <input type="submit" value="Send" class="form_submit">
-    </div>
+    <button type="submit">Sign Up</button>
   </form>
 </main>
 <footer>
@@ -104,6 +105,93 @@
     blackBg.addEventListener('click', function () {
       nav.classList.remove('open');
     });
+
+    const form = document.getElementById('form');
+    const username = document.getElementById('username');
+    const email = document.getElementById('email');
+    const comment = document.getElementById('comment');
+    let nameV,emailV,commentV;
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+
+      validateInputs();
+    });
+
+    const setError = (element, message) => {
+      const inputControl = element.parentElement;
+      const errorDisplay = inputControl.querySelector('.error');
+
+      errorDisplay.innerText = message;
+      inputControl.classList.add('error');
+      inputControl.classList.remove('success')
+    }
+
+    const setSuccess = element => {
+      const inputControl = element.parentElement;
+      const errorDisplay = inputControl.querySelector('.error');
+
+      errorDisplay.innerText = '';
+      inputControl.classList.add('success');
+      inputControl.classList.remove('error');
+    };
+
+    const setDefault = element => {
+      const inputControl = element.parentElement;
+      const errorDisplay = inputControl.querySelector('.error');
+
+      errorDisplay.innerText = '';
+      inputControl.classList.remove('success');
+      inputControl.classList.remove('error');
+    };
+
+    const isValidEmail = email => {
+      const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(String(email).toLowerCase());
+    }
+
+    const validateInputs = () => {
+      const usernameValue = username.value.trim();
+      const emailValue = email.value.trim();
+      const commentValue = comment.value.trim();
+
+      if(usernameValue === '') {
+        setError(username, 'Username is required');
+        nameV = false;
+      } else {
+        setSuccess(username);
+        nameV = true;
+      }
+
+      if(emailValue === '') {
+        setError(email, 'Email is required');
+        emailV = false;
+      } else if (!isValidEmail(emailValue)) {
+        setError(email, 'Provide a valid email address');
+        emailV = false;
+      } else {
+        setSuccess(email);
+        emailV = true;
+      }
+
+      if(commentValue === '') {
+        setError( comment, 'Comment is required');
+        commentV = false;
+      } else {
+        setSuccess(comment);
+        commentV = true;
+      }
+
+      if(commentV && nameV && emailV){
+        alert("Thank you for your comment!");
+        document.getElementById("form").reset();
+        setDefault(username);
+        setDefault(comment);
+        setDefault(email);
+      }
+
+    };
+
   };
 </script>
 </body>

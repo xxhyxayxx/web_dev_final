@@ -12,48 +12,70 @@
     letter-spacing: 0.01rem;
 }
 
-.contents_form{
-    padding: 52px 0 0;
+#form{
+    padding: 32px 0 0;
     width: 332px;
     margin: 0 auto;
 }
 
-.form_label{
+#form button {
+    font-family: var(--josefin);
+    color: #fff;
+    font-size: 1.25rem;
+    background: var(--red);
+    padding: 10px 40px;
+    margin: 12px 0 0;
+    width: 160px;
+    border-radius: 25px;
+}
+
+.input-control label{
     display: block;
     text-align: left;
     font-family: var(--josefin);
     color: #868686;
     font-size: 1.25rem;
-    padding: 0 0 8px 0;
+    padding: 12px 0 8px 0;
 }
 
-.form_input_area{
+.input-control input,.input-control textarea {
     text-align: left;
     width: 100%;
     border: 1px solid #868686;
     padding: 8px;
 }
 
-.form_box{
-    padding: 0 0 24px 0;
+.input-control.success input, .input-control.success textarea{
+    border-color: #09c372;
 }
 
-.form_submit{
-    font-family: var(--josefin);
-    color: #fff;
-    font-size: 1.25rem;
-    background: var(--red);
-    padding: 10px 40px;
-    width: 160px;
-    border-radius: 25px;
+.input-control.error input, .input-control.error textarea {
+    border-color: #ff3860;
 }
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+    text-align: left;
+    padding: 4px 0 0;
+}
+
+
+
+
+
 
 @media screen and (max-width: 560px){
+    .contents_box{
+        padding: 100px 0 0;
+    }
+
     .contents_text{
         padding: 0 20px 0;
     }
 
-    .contents_form{
+    #form{
         width: 300px;
     }
 }

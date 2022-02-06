@@ -15,7 +15,7 @@
     max-width: 520px;
 }
 
-.about_us_title,.our_history_title{
+.contents_title{
     padding: 0 0 40px 0;
 }
 
@@ -73,12 +73,25 @@
 }
 
 @media screen and (max-width: 540px){
-    .contents_img_box{
-        padding: 0 20px 0;
+    .contents_box{
+        padding: 100px 32px 0;
+    }
+
+    .contents_box:last-child{
+        padding: 60px 32px 0;
+    }
+
+    .contents_des_box{
+        padding: 0;
     }
 
     .contents_img_box img{
         width: 100%;
+    }
+
+    .contents_title{
+        text-align: center;
+        padding: 32px 0 20px;
     }
 }
 

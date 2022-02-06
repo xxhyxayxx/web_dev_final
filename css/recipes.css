@@ -33,6 +33,14 @@
 }
 
 @media screen and (max-width: 540px){
+    .recipes_contents_title{
+        padding: 0 20px 0;
+    }
+
+    .contents_box:first-child{
+        padding: 100px 0 80px;
+    }
+
     .carousel_box{
         width: 320px;
     }

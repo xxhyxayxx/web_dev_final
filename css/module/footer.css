@@ -61,6 +61,10 @@ footer{
 }
 
 @media screen and (max-width: 560px){
+    footer{
+        margin: 100px 0 0;
+    }
+
     .footer_box{
         display: flex;
         flex-flow: column;
@@ -72,5 +76,19 @@ footer{
 
     .footer_sns{
         justify-content: center;
+    }
+
+    .footer_nav_list li{
+        font-size: 1rem;
+        margin: 0 20px 0 0;
+    }
+
+    .footer_nav_list{
+        justify-content: center;
+    }
+
+    .footer_copy{
+        font-size: 0.9rem;
+        padding: 120px 20px 20px;
     }
 }

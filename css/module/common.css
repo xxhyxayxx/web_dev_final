@@ -59,6 +59,10 @@
 }
 
 @media screen and (max-width: 560px){
+    .contents_title{
+        font-size: 2rem;
+    }
+
     .recipe_list{
         grid-column-gap: 0;
         grid-template-columns: 275px;
