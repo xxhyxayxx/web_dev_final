@@ -1,5 +1,4 @@
 /*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
-
 :root {
     --yellow: #FEDF90;
     --orange: #FDC229;
@@ -45,6 +44,47 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     color: #2b2b2b;
+    -webkit-animation: fadeIn 1s ease 0s 1 normal;
+    animation: fadeIn 1s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transition-duration: 500ms;
+    transition-property: opacity, transform;
+}
+
+.fade-in-up {
+    transform: translate(0, 50px);
+}
+
+.scroll-in {
+    opacity: 1;
+    transform: translate(0, 0);
 }
 
 /**
