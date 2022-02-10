@@ -1,7 +1,7 @@
-document.addEventListener( 'DOMContentLoaded', function() {
-    const splide = new Splide( '.splide' ,{
-        type   : 'loop',
+document.addEventListener('DOMContentLoaded', function () {
+    const splide = new Splide('.splide', {
+        type: 'loop',
         autoplay: true,
     });
     splide.mount();
-} );
+});

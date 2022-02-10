@@ -3,45 +3,45 @@
 @import url(module/common.css);
 @import url(module/splide.min.css);
 
-.recipes_contents_title{
+.recipes_contents_title {
     text-align: center;
 }
 
-.contents_box:first-child{
+.contents_box:first-child {
     padding: 120px 0;
 }
 
-.carousel_box{
+.carousel_box {
     max-width: 1280px;
     margin: 0 auto;
 }
 
-.splide__slide a img{
+.splide__slide a img {
     width: 100%;
 }
 
-@media screen and (max-width: 1280px){
-    .carousel_box{
+@media screen and (max-width: 1280px) {
+    .carousel_box {
         width: 980px;
     }
 }
 
-@media screen and (max-width: 1080px){
-    .carousel_box{
+@media screen and (max-width: 1080px) {
+    .carousel_box {
         width: 740px;
     }
 }
 
-@media screen and (max-width: 540px){
-    .recipes_contents_title{
+@media screen and (max-width: 540px) {
+    .recipes_contents_title {
         padding: 0 20px 0;
     }
 
-    .contents_box:first-child{
+    .contents_box:first-child {
         padding: 100px 0 80px;
     }
 
-    .carousel_box{
+    .carousel_box {
         width: 320px;
     }
 }

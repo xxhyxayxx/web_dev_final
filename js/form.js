@@ -3,7 +3,7 @@ window.onload = function () {
     const username = document.getElementById('username');
     const email = document.getElementById('email');
     const comment = document.getElementById('comment');
-    let nameV,emailV,commentV;
+    let nameV, emailV, commentV;
 
     form.addEventListener('submit', e => {
         e.preventDefault();
@@ -48,7 +48,7 @@ window.onload = function () {
         const emailValue = email.value.trim();
         const commentValue = comment.value.trim();
 
-        if(usernameValue === '') {
+        if (usernameValue === '') {
             setError(username, 'Name is required');
             nameV = false;
         } else {
@@ -56,7 +56,7 @@ window.onload = function () {
             nameV = true;
         }
 
-        if(emailValue === '') {
+        if (emailValue === '') {
             setError(email, 'Email is required');
             emailV = false;
         } else if (!isValidEmail(emailValue)) {
@@ -67,15 +67,15 @@ window.onload = function () {
             emailV = true;
         }
 
-        if(commentValue === '') {
-            setError( comment, 'Comment is required');
+        if (commentValue === '') {
+            setError(comment, 'Comment is required');
             commentV = false;
         } else {
             setSuccess(comment);
             commentV = true;
         }
 
-        if(commentV && nameV && emailV){
+        if (commentV && nameV && emailV) {
             alert("Thank you for your comment!");
             document.getElementById("form").reset();
             setDefault(username);
