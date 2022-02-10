@@ -76,12 +76,31 @@ window.onload = function () {
         }
 
         if (commentV && nameV && emailV) {
-            alert("Thank you for your comment!");
             document.getElementById("form").reset();
             setDefault(username);
             setDefault(comment);
             setDefault(email);
+            modal();
         }
 
     };
+
+    function modal() {
+        const easyModal = document.getElementById('easyModal');
+        const buttonClose = document.getElementsByClassName('modalClose')[0];
+
+        easyModal.style.display = 'block';
+
+        buttonClose.addEventListener('click', modalClose);
+        function modalClose() {
+            easyModal.style.display = 'none';
+        }
+
+        addEventListener('click', outsideClose);
+        function outsideClose(e) {
+            if (e.target === easyModal) {
+                easyModal.style.display = 'none';
+            }
+        }
+    }
 };
