@@ -1,3 +1,9 @@
+/*********************************************
+
+header.css
+
+ *********************************************/
+
 header{
     display: flex;
     flex-direction: column;
@@ -12,24 +18,28 @@ header{
     display: block;
 }
 
+/* main image index.html */
 .header_index{
     justify-content: space-between;
     background: url(../../images/main_pc.png) center / cover;
     min-height: 700px;
 }
 
+/* main image about_us.html */
 .header_about_us{
     justify-content: flex-start;
     background: url(../../images/about_us_pc.png) center / cover;
     min-height: 500px;
 }
 
+/* main image recipes.html */
 .header_recipes{
     justify-content: flex-start;
     background: url(../../images/recipes_pc.png) center / cover;
     min-height: 500px;
 }
 
+/* main image recipes_detail.html */
 .header_recipes_detail{
     justify-content: flex-start;
     background: url(../../images/recipes/thai_red_curry_pc.png) center / cover;
@@ -89,14 +99,9 @@ header{
     padding: 16px 40px;
 }
 
-
-
-
-
-
 /*
-hamburger(ハンバーガーアイコン)
-=================================== */
+ * hamburger menu icon
+ */
 .hamburger {
     position: absolute;
     right: 40px;
@@ -129,7 +134,7 @@ hamburger(ハンバーガーアイコン)
     top: 36px;
 }
 
-/*ハンバーガーがクリックされたら*/
+/* when a hamburger menu clicked */
 .open .hamburger__line--1 {
     transform: rotate(-45deg);
     top: 11px;
@@ -145,21 +150,21 @@ hamburger(ハンバーガーアイコン)
 }
 
 /*
-sp-nav(ナビ)
-=================================== */
+ * navigation menu for smartphone
+ */
 .sp-nav {
     position: fixed;
     right: -100%;
-    /*ハンバーガーがクリックされる前はWindow右側に隠す*/
+    /*Hide the hamburger on the right side of the window before it is clicked*/
     top: 0;
     width: 80%;
-    /* 出てくるスライドメニューの幅 */
+    /*Width of the slide menu that appears.*/
     height: 100vh;
     background-color: var(--red);
     transition: all 0.5s;
     z-index: 200;
     overflow-y: auto;
-    /* メニューが多くなったらスクロールできるように */
+    /*If you have a lot of menus, you can scroll through them.*/
 }
 
 .sp_menu{
@@ -173,15 +178,13 @@ sp-nav(ナビ)
 }
 
 
-/*ハンバーガーがクリックされたら右からスライド*/
+/*Slide from the right when the hamburger is clicked.*/
 .open .sp-nav {
     right: 0;
 }
 
 
-/*
-black-bg(ハンバーガーメニュー解除用bg)
-=================================== */
+/*To release the hamburger menu*/
 .black-bg {
     position: fixed;
     left: 0;
@@ -196,17 +199,17 @@ black-bg(ハンバーガーメニュー解除用bg)
     z-index: 100;
 }
 
-/*ハンバーガーメニューが開いたら表示*/
+/*Display the hamburger menu when it opens*/
 .open .black-bg {
     opacity: 0.3;
     visibility: visible;
 }
 
+/*
+ * media query
+ */
 
-
-
-
-
+/* max-width 1280px */
 @media screen and (max-width: 1280px){
     .header_box{
         width: 100%;
@@ -214,6 +217,7 @@ black-bg(ハンバーガーメニュー解除用bg)
     }
 }
 
+/* max-width 980px */
 @media screen and (max-width: 980px){
     .header_main_title{
         font-size: 2.75rem;
@@ -227,6 +231,7 @@ black-bg(ハンバーガーメニュー解除用bg)
     }
 }
 
+/* max-width 560px */
 @media screen and (max-width: 560px){
     .pc_header{
         display: none;

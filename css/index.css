@@ -1,6 +1,11 @@
 @import url(module/header.css);
 @import url(module/footer.css);
 @import url(module/common.css);
+/*********************************************
+
+index.css
+
+ *********************************************/
 
 .contents_box{
     padding: 120px 0 0;
@@ -46,6 +51,11 @@
     padding: 20px 60px;
 }
 
+/*
+ * media query
+ */
+
+/* max-width 980px */
 @media screen and (max-width: 980px){
     .contents_text{
         width: 100%;
@@ -53,6 +63,7 @@
     }
 }
 
+/* max-width 540px */
 @media screen and (max-width: 540px){
     .contents_box{
         padding: 100px 0 0;

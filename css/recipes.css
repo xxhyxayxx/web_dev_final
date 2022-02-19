@@ -3,6 +3,12 @@
 @import url(module/common.css);
 @import url(module/splide.min.css);
 
+/*********************************************
+
+recipes.css
+
+ *********************************************/
+
 .recipes_contents_title {
     text-align: center;
 }
@@ -20,18 +26,25 @@
     width: 100%;
 }
 
+/*
+ * media query
+ */
+
+/* max-width 1280px */
 @media screen and (max-width: 1280px) {
     .carousel_box {
         width: 980px;
     }
 }
 
+/* max-width 980px */
 @media screen and (max-width: 980px) {
     .carousel_box {
         width: 560px;
     }
 }
 
+/* max-width 540px */
 @media screen and (max-width: 540px) {
     .recipes_contents_title {
         padding: 0 20px 0;

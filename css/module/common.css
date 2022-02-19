@@ -1,3 +1,10 @@
+/*********************************************
+
+common.css
+
+ *********************************************/
+
+
 .contents_title{
     color: var(--red);
     font-family: var(--josefin);
@@ -43,6 +50,11 @@
     padding:8px 0 0 0;
 }
 
+/*
+ * media query
+ */
+
+/* max-width 1280px */
 @media screen and (max-width: 1280px){
     .recipe_list{
         width: 100%;
@@ -52,6 +64,7 @@
     }
 }
 
+/* max-width 980px */
 @media screen and (max-width: 980px){
     .recipe_list{
         grid-template-columns: 275px 275px;

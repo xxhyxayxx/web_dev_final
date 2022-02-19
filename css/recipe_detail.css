@@ -2,6 +2,12 @@
 @import url(module/footer.css);
 @import url(module/common.css);
 
+/*********************************************
+
+recipe_detail.css
+
+ *********************************************/
+
 .wrapper {
     display: flex;
     max-width: 1280px;
@@ -59,11 +65,11 @@
 }
 
 .contents_instructions_list li:before {
-    /* 以下数字をつける */
+    /* put a number on */
     position: absolute;
     counter-increment: number;
     content: counter(number);
-    /*以下数字のデザイン変える*/
+    /* change the design of the numbers */
     display: inline-block;
     background: #c4c4c4;
     color: #fff;
@@ -74,19 +80,24 @@
     height: 25px;
     line-height: 26px;
     text-align: center;
-    /*以下 上下中央寄せのため*/
+    /*To center the top and bottom*/
     top: 25%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
+/*
+ * media query
+ */
+
+/* max-width 1280px */
 @media screen and (max-width: 1280px) {
     .wrapper {
         padding: 100px 80px 0;
     }
 }
 
-
+/* max-width 980px */
 @media screen and (max-width: 980px) {
     .wrapper {
         flex-flow: column;
