@@ -22,8 +22,12 @@
 </head>
 <body>
 <header class="header_contact">
+    <!------------------------
+        Header
+    -------------------------->
     <div class="header_box">
         <h1 class="header_title"><a href="./">Foodies</a></h1>
+        <!-- pc header menu -->
         <nav class="pc_header">
             <ul class="header_menu">
                 <li class="header_menu_list"><a href="about_us.html">About Us</a></li>
@@ -31,18 +35,22 @@
                 <li class="header_menu_list"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <!-- sp header -->
         <div id="nav-wrapper" class="nav-wrapper sp_header">
+            <!-- sp hamburger menu -->
             <div class="hamburger" id="js-hamburger">
                 <span class="hamburger__line hamburger__line--1"></span>
                 <span class="hamburger__line hamburger__line--2"></span>
                 <span class="hamburger__line hamburger__line--3"></span>
             </div>
             <nav class="sp-nav">
+                <!-- sp menu -->
                 <ul class="sp_menu">
                     <li><a href="about_us.html">About Us</a></li>
                     <li><a href="recipes.html">Recipes</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <!-- sp sns -->
                 <ul class="footer_sns">
                     <li><a href="https://twitter.com/" target="_blank"><img src="images/twitter.svg" alt="Twitter"></a>
                     </li>
@@ -52,16 +60,22 @@
                                                                                   alt="Instagram"></a></li>
                 </ul>
             </nav>
+            <!-- sp menu background -->
             <div class="black-bg" id="js-black-bg"></div>
         </div>
     </div>
+    <!-- main image -->
     <h2 class="header_main_title sub_menu_title">Contact</h2>
 </header>
 <main class="contents_box">
+    <!------------------------
+        Contact
+    -------------------------->
     <h3 class="contents_title">Contact</h3>
     <p class="contents_text">Have something you’d like to let us know?</p>
     <p class="contents_text">Whether you have a comment on a recipe or an idea to share, we would love to hear from
         you</p>
+    <!-- form -->
     <form id="form" action="/">
         <div class="input-control">
             <label for="username">Name</label>
@@ -80,6 +94,7 @@
         </div>
         <button type="submit">Sent</button>
     </form>
+    <!-- modal -->
     <div id="easyModal" class="modal">
         <div class="modal-content">　
             <span class="modalClose">×</span>
@@ -93,9 +108,13 @@
     </div>
 </main>
 <footer>
+    <!------------------------
+        footer
+    -------------------------->
     <div class="footer_box">
         <h2 class="footer_title"><a href="">Foodies</a></h2>
         <div class="footer_link_box">
+            <!-- footer nav -->
             <nav>
                 <ul class="footer_nav_list">
                     <li><a href="">About us</a></li>
@@ -103,6 +122,7 @@
                     <li><a href="">Contact</a></li>
                 </ul>
             </nav>
+            <!-- footer sns -->
             <ul class="footer_sns">
                 <li><a href="https://twitter.com/" target="_blank"><img src="images/twitter.svg" alt="Twitter"></a></li>
                 <li><a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg"
@@ -112,8 +132,12 @@
             </ul>
         </div>
     </div>
+    <!-- copyright -->
     <p class="footer_copy">Copyright © 2021 Foodies. All Rights Reserved.</p>
 </footer>
+<!------------------------
+        javascript
+-------------------------->
 <script src="js/nav_menu.js"></script>
 <script src="js/form.js"></script>
 </body>
