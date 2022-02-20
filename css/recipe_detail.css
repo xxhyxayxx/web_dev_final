@@ -101,6 +101,7 @@ recipe_detail.css
 @media screen and (max-width: 980px) {
     .wrapper {
         flex-flow: column;
+        padding: 80px 0 0;
     }
 
     .recipes_detail_title {

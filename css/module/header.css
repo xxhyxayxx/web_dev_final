@@ -8,6 +8,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .sp_header{
@@ -65,6 +66,11 @@ header{
     color: #fff;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+}
+
+.color_red{
+    color: var(--red);
 }
 
 .header_title{
@@ -85,6 +91,7 @@ header{
 }
 
 .header_main_title{
+    padding: 280px 0 0;
     font-size: 3.75rem;
     color: var(--yellow);
     font-family: var(--josefin);
@@ -222,7 +229,7 @@ header{
     .header_main_title{
         font-size: 2.75rem;
         text-align: center;
-        padding: 0 8px 0;
+        padding: 280px 8px 0;
         box-sizing: border-box;
     }
 
