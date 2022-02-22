@@ -67,6 +67,7 @@ header{
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index: 100;
 }
 
 .color_red{
@@ -112,33 +113,44 @@ header{
 .hamburger {
     position: absolute;
     right: 40px;
-    top: 40px;
-    width: 50px;
-    height: 40px;
+    top: 30px;
+    width: 64px;
+    height: 64px;
     cursor: pointer;
     z-index: 300;
+    background: var(--red);
+    border-radius: 32px;
+}
+
+.hamburger__menu{
+    position: absolute;
+    top: 40px;
+    right: 13px;
+    font-family: var(--josefin);
+    color: #fff;
+    font-size: 0.75rem;
 }
 
 .hamburger__line {
     position: absolute;
-    width: 50px;
-    height: 4px;
+    width: 37px;
+    height: 2px;
     border-radius: 4px;
-    right: 0;
+    right: 14px;
     background-color: #fff;
     transition: all 0.5s;
 }
 
 .hamburger__line--1 {
-    top: 1px;
+top: 15px;
 }
 
 .hamburger__line--2 {
-    top: 18px;
+    top: 23px;
 }
 
 .hamburger__line--3 {
-    top: 36px;
+    top: 32px;
 }
 
 /* when a hamburger menu clicked */
@@ -234,7 +246,7 @@ header{
     }
 
     .sub_menu_title{
-        padding: 150px 0 0;
+        padding: 220px 0 0;
     }
 }
 

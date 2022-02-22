@@ -114,6 +114,7 @@ recipe_detail.css
 
     .contents_ingredients_box {
         width: 100%;
+        min-width: 330px;
         padding: 32px 32px 0;
     }
 
