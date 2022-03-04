@@ -70,10 +70,6 @@ header{
     z-index: 100;
 }
 
-.color_red{
-    color: var(--red);
-}
-
 .header_title{
     font-size: 2.5rem;
 }
@@ -227,6 +223,12 @@ top: 15px;
 /*
  * media query
  */
+/* min-width 1470px */
+@media screen and (min-width: 1470px){
+    .header_index{
+        background: url(../../images/mask.png) center / cover;
+    }
+}
 
 /* max-width 1280px */
 @media screen and (max-width: 1280px){

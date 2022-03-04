@@ -32,11 +32,21 @@ document.addEventListener('DOMContentLoaded',
         //Scroll event to change the header text color.
         window.addEventListener('scroll', function(){
             if( 400 < window.scrollY ) {
-                document.getElementById('title-color').classList.add('color_red');
-                document.getElementById('menu-color').classList.add('color_red');
+                document.getElementById('title-color').style.color = '#F15A45';
             } else if ( 400 > window.scrollY ){
-                document.getElementById('title-color').classList.remove('color_red');
-                document.getElementById('menu-color').classList.remove('color_red');
+                document.getElementById('title-color').style.color = '#FFF';
             }
         });
+
+        const menuLink = document.getElementsByClassName( "header_menu_list_link" );
+
+        for(let i = 0; i < menuLink.length; i++){
+            window.addEventListener('scroll', function(){
+                if( 400 < window.scrollY ) {
+                    menuLink[i].style.color = '#F15A45';
+                } else if ( 400 > window.scrollY ){
+                    menuLink[i].style.color = '#FFF';
+                }
+            });
+        }
     });
