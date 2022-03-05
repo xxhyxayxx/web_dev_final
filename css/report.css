@@ -1,0 +1,74 @@
+.report_title, .report_name{
+    text-align: center;
+    color: var(--red);
+    font-family: var(--josefin);
+}
+
+.report_title{
+    padding: 180px 0 0;
+    font-size: 2.5rem;
+}
+
+.report_name{
+    padding: 40px 0 80px;
+    font-size: 1.5rem;
+}
+
+.report_des{
+    max-width: 700px;
+    margin: 0 auto;
+    letter-spacing: 0.05rem;
+    line-height: 1.5rem;
+    padding: 0 0 180px;
+}
+
+.report_des dt{
+    color: var(--red);
+    padding: 0 0 20px;
+}
+
+.report_des dd{
+    padding: 0 0 60px;
+}
+
+.report_list li a {
+    text-decoration: underline;
+}
+
+.appendices_list{
+    display: flex;
+    padding: 0 0 20px;
+}
+
+.appendices_list li{
+    padding: 0 20px 0 0;
+}
+
+.appendices_list li:last-child{
+    padding: 0;
+}
+
+.appendices_list li img{
+    width: 100%;
+}
+
+.appendices_ttl{
+    padding: 0 0 20px;
+}
+
+.site_map{
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.site_map img{
+    width: 100%;
+}
+
+.resource_list li{
+    padding: 0 0 20px;
+}
+
+.resource_list li a{
+    text-decoration: underline;
+}

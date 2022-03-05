@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report: Large Coursework </title>
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="images/android-chrome-192x192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Roboto&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/report.css">
+</head>
+<body>
+<h2 class="report_title">Report: Large Coursework</h2>
+<p class="report_name">Hikari Nakamura</p>
+<dl class="report_des">
+  <dt>Introduction: What is the essential story being told by your site and what type of structure
+    did you choose to implement.</dt>
+  <dd>The site I created is a website that introduces recipes. The site's structure is as follows: home.html shows some of the latest recipes, about_us.html talks about the site's history and how it was founded, recipes.html shows a list of recipes, and from there, you can go to recipe_detail.html to see the ingredients and instructions. In contact.html, there is a contact form that users can send in their questions or recipes. There are a lot of recipe sites out there, but many of them are complicated, with blog posts and recipes mixed and complex leads to get to the recipes. I designed the site to be a reference site for users to plan their daily menus. By keeping the design as simple as possible and eliminating blog posts, I made it easy to use and structured to get the information they wanted quickly. In addition to introducing the recipes, I also created an About Us page to explain the history and background behind this recipe site to users to learn more about it. In recipes.html, which is the most crucial part of this site, the recipes are arranged according to each theme. In addition, the banner images are displayed on a carousel to help convey the message visually.</dd>
+  <dt>State 3 things that have inspired you when creating your website. These could include
+    guest speakers, other websites, artists, developers etc. </dt>
+  <dd>In the beginning, I looked at as many recipe sites as I could to research and create this site. I referred to the final three recipe sites, took screenshots, and raised each site's good points and improvement points. Based on this information, I created wireframes. For the design of the site, I used Pinterest for inspiration. For the colors, I used the app "COOLORS" as a reference to create a color combination that was not too loud and not too dark.</dd>
+  <dt>State 3 ways in which your site is accessible.</dt>
+  <dd>For the accessibility of the site, I tried to use semantic HTML tags. Furthermore, I made it mandatory to specify the alt attribute in the image tag and set the text to be about the "topic" that the HTML document is trying to convey, not about how the HTML is coded (meta-information). I also used aria-required for the contact form so that visually impaired people can understand the form's required fields.</dd>
+  <dt>State 3 ways in which you have considered usability in your site</dt>
+  <dd>The overall design is simple, and the header is fixed so that users can move to other pages while scrolling. A hamburger menu was used on a smartphone-sized screen to unify the menu. Also, by shortening the path to the recipes, I made it easier for users to find the recipes. The design is responsive so that it looks good on any device. In addition, the contact form checks the user's input, and if it is not filled in, the line in the corresponding field turns red, and an error message is displayed.</dd>
+  <dt>State 3 things you had to learn/find out by yourself when creating your site, and describe
+    how you did that (i.e. what searches you did, any new tools/techniques you learned, any
+    changes/adaptations you made to a particular resource to make it work with your site). </dt>
+  <dd>First, I studied and learned about the unfamiliar and useful operations of Figma design tools by watching youtube videos, etc. For HTML, I checked the tag specifications on the W3School website, and for CSS and JavaScript, I referred to various websites for implementing what I wanted and compared which method best suited my needs. I also learned by watching youtube videos on modern writing styles.</dd>
+  <dt>how you did that (i.e. what searches you did, any new tools/techniques you learned, any
+    changes/adaptations you made to a particular resource to make it work with your site). </dt>
+  <dd>The first step in creating the site was to think about personas. I researched what kind of users would use the site and what they wanted. Eventually, I set the goal of making it easy to get to the recipes. I then analyzed three well-known recipe sites. The famous sites had a sophisticated design and offered a wide variety of content, which helped create my site. I chose to use Figma, the design tool for creating the wireframes and design. It was easy to use because it could be operated on a browser, so there was no need to worry about data loss. I believe that the essential part of a recipe site is the photos of food, so I selected the images to be used on the site very carefully. For the editor tool, Web Storm was chosen for coding. It saved us a lot of coding time by checking for errors as needed. I learned various coding techniques. In HTML, The implementation of the contact form seemed difficult, but I tried to implement it properly using semantic tags. Also, writing CSS using variables was very useful, and adding CSS animations on page load improved the site's quality. As for JavaScript, DOM manipulation led to improved usabilities, such as dynamically changing text color and changing the content according to conditions. As for the JavaScript library, I also considered jquery, but while jquery can be used for a wide range of things, the file itself is hefty. In addition, most jquery can be replaced by pure JavaScript, so I did not use it. Therefore, I searched for carousel libraries written in pure JavaScript and settled on splice.js. It was challenging to read the documentation and make changes to fit the site's design. Although it was developed by an individual, the code was managed through Github, which prevented data loss and helped me learn git. Once some coding was completed, I created a Favicon and a banner image for SNS sharing. Those images were made on Figma. </dd>
+  <dt>What aspect(s) of your work do you think worked well and why?</dt>
+  <dd>First of all, I did an excellent job in site design and structure, considering usability. I was not sure if I could properly implement this design in HTML and CSS at the design stage, but I could implement it by referring to web blogs and videos, which was a great learning experience and gave me confidence in myself. Although It was challenging to replicate the design in the coding phase, I could also efficiently research the contents I wanted to implement on the web. For example, the main image is also the header's background, so it needed to be set as the background image in the CSS. Also, the main image was required to be changed on each page. In addition, since the design changed depending on the device's width, it was necessary to write HTML and CSS that considered the design after the change. I also think I could put together a clean file structure. As for the CSS file structure, the header, footer, and common parts are modularized, and the CSS files are separated for each page so that the minimum code required for each page is loaded. For JS files as well, I divided the files by purpose and loaded the target file on the necessary page, which also affects the speed of page loading, resulting in improved usability. </dd>
+  <dt>What aspect(s) of your work could be improved, and how might you do things differently
+    another time?</dt>
+  <dd>I could create a site that meets our objectives, but I believe I could have added more functions to improve usability if there are areas for improvement. For example, recipes are currently listed on the recipe page, but it would be easier to search for a recipe if it were possible to search for it using the search form. I also thought it would save time for users to re-calculate the number of ingredients in a recipe if it could change according to the number of people required. I could have used more CSS animations to make the site more visually attractive, and I could have included video clips of recipes to make it easier to understand how they are made. In terms of accessibility, it took me a long time to understand WAI-ARIA specifications, and if I had more time, I would have been able to make better use of it. If there were a next time, I would have spent more time coding. Coding took longer than expected, and I often ran into unexpected problems. In addition, I would also like to spend more time on user research and create a site that specializes in usability.
+  </dd>
+  <dt>What resources were used when creating your work?</dt>
+  <dd>
+    <ul class="report_list">
+      <li><a href="https://www.w3schools.com/" target="_blank">W3Schools (HTML/CSS)</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN Web Docs (JavaScript)</a></li>
+      <li><a href="https://www.figma.com/" target="_blank">Figma (Design Tool)</a></li>
+      <li><a href="https://fonts.google.com/" target="_blank">Google Fonts (Web Font)</a></li>
+      <li><a href="https://www.pinterest.co.uk/" target="_blank">Pinterest (Design Inspiration)</a></li>
+      <li><a href="https://unsplash.com/" target="_blank">Unsplash (Images for Foods)</a></li>
+      <li><a href="https://fontawesome.com/" target="_blank">Fontawesome (SNS Icon)</a></li>
+      <li><a href="https://www.allrecipes.com/" target="_blank">allresipes (Research for site)</a></li>
+      <li><a href="https://www.simplyrecipes.com/" target="_blank">Simply RECIPES (Research for site)</a></li>
+      <li><a href="https://tasty.co/" target="_blank">TASTY (Research for site)</a></li>
+      <li><a href="https://coolors.co/?home" target="_blank">Coolors (Design Color)</a></li>
+      <li><a href="https://splidejs.com/" target="_blank">Splide (JS library)</a></li>
+      <li><a href="https://youtu.be/Qhaz36TZG5Y" target="_blank">10 CSS Pro Tips - Code this, NOT that!(YouTube Video)</a></li>
+      <li><a href="https://youtu.be/jx5jmI0UlXU" target="_blank">Learn CSS Position In 9 Minutes(YouTube Video)</a></li>
+      <li><a href="https://yujiromx.com/header-bg/" target="_blank">CSS:How to lay a background image under the header</a></li>
+      <li><a href="https://waic.jp/docs/WCAG-TECHS/ARIA2" target="_blank">Identify required items by the aria-required property (Form)</a></li>
+      <li><a href="https://www.sejuku.net/blog/91384" target="_blank">How to retrieve and check input form values by JavaScript</a></li>
+      <li><a href="https://www.webdesignleaves.com/pr/jquery/javascript-validation.html" target="_blank">Form validation using JavaScript</a></li>
+      <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">A Complete Guide to Grid CSS</a></li>
+      <li><a href="https://coco-factory.jp/ugokuweb/css02/" target="_blank">Let's Specify Movement with CSS Animation </a></li>
+      <li><a href="https://youtu.be/g9Qff0b-lHk" target="_blank">Intro to ARIA</a></li>
+    </ul>
+  </dd>
+  <dt>Appendices: Site Map, Wireframes and Mockups</dt>
+  <dd>
+    <p class="appendices_ttl">Site Map</p>
+    <div class="site_map"><img src="images/report/sitemap.png" alt="Site Map"></div>
+    <p class="appendices_ttl">Wireframes</p>
+    <ul class="appendices_list">
+      <li><img src="images/report/wireframe_PC_Home.png" alt="Wireframe PC Home"></li>
+      <li><img src="images/report/wireframe_PC_About_Us.png" alt="Wireframe PC AboutUs"></li>
+      <li><img src="images/report/wireframe_PC_Recipes.png" alt="Wireframe PC Recipes"></li>
+      <li><img src="images/report/wireframe_PC_Recipes_Detail.png" alt="Wireframe PC Recipe Detail"></li>
+      <li><img src="images/report/wireframe_PC_Contact.png" alt="Wireframe PC Contact"></li>
+    </ul>
+    <ul class="appendices_list">
+      <li><img src="images/report/wireframe_SP_Home.png" alt="Wireframe SP Home"></li>
+      <li><img src="images/report/wireframe_SP_About_Us.png" alt="Wireframe SP AboutUs"></li>
+      <li><img src="images/report/wireframe_SP_Resipes.png" alt="Wireframe SP Recipes"></li>
+      <li><img src="images/report/wireframe_SP_Recipe_Detail.png" alt="Wireframe SP Recipe Detail"></li>
+      <li><img src="images/report/wireframe_SP_Contact.png" alt="Wireframe SP Contact"></li>
+    </ul>
+    <p class="appendices_ttl">Design</p>
+    <ul class="appendices_list">
+      <li><img src="images/report/PC_Home.png" alt="Design PC Home"></li>
+      <li><img src="images/report/PC_About_Us.png" alt="Design PC AboutUs"></li>
+      <li><img src="images/report/PC_Recipes.png" alt="Design PC Recipes"></li>
+      <li><img src="images/report/PC_Recipes_Detail.png" alt="Design PC Recipe Detail"></li>
+      <li><img src="images/report/PC_Contact.png" alt="Design PC Contact"></li>
+    </ul>
+    <ul class="appendices_list">
+      <li><img src="images/report/SP_Home.png" alt="Design SP Home"></li>
+      <li><img src="images/report/SP_About_Us.png" alt="Design SP AboutUs"></li>
+      <li><img src="images/report/SP_Recipes.png" alt="Design SP Recipes"></li>
+      <li><img src="images/report/SP_Recipes_Detail.png" alt="Design SP Recipe Detail"></li>
+      <li><img src="images/report/SP_Contact.png" alt="Design SP Contact"></li>
+    </ul>
+  </dd>
+  <dt>Format for citing online resource:</dt>
+  <dd>
+    <ul class="resource_list">
+      <li>[1] Asukasu, 'How to implement the hamburger menu', 2022.01.18. [Online]. Available:
+        <a href="https://breezegroup.co.jp/202007/js-hamburger-menu/" target="_blank">https://breezegroup.co.jp/202007/js-hamburger-menu/</a> [Accessed: 28- Jan- 2022]. </li>
+      <li>[2] Splide.js, 'Splide.js', [Online]. Available:
+        <a href="https://splidejs.com/guides/getting-started/" target="_blank">https://splidejs.com/guides/getting-started/</a> [Accessed: 25- Jan- 2022]. </li>
+      <li>[3] SAMURAI ENGINEER, 'How to retrieve and check input form values', 2019.04.16. [Online]. Available:
+        <a href="https://www.sejuku.net/blog/91384" target="_blank">https://www.sejuku.net/blog/91384</a> [Accessed: 18- Jan- 2022]. </li>
+      <li>[4] Web Design Leaves, 'Form validation (input check) using JavaScript', 2021.11.10. [Online]. Available:
+        <a href="https://www.webdesignleaves.com/pr/jquery/javascript-validation.html" target="_blank">https://www.webdesignleaves.com/pr/jquery/javascript-validation.html</a> [Accessed: 20- Jan- 2022]. </li>
+    </ul>
+  </dd>
+</dl>
+</body>
+</html>

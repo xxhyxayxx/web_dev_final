@@ -1,3 +1,8 @@
+/*
+The implementation of the hamburger menu was based on this
+https://breezegroup.co.jp/202007/js-hamburger-menu/
+ */
+
 document.addEventListener('DOMContentLoaded',
     function () {
         const nav = document.getElementById('nav-wrapper');
