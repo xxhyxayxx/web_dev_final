@@ -17,18 +17,22 @@
 .report_des{
     max-width: 700px;
     margin: 0 auto;
-    letter-spacing: 0.05rem;
-    line-height: 1.5rem;
     padding: 0 0 180px;
 }
 
 .report_des dt{
     color: var(--red);
     padding: 0 0 20px;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    letter-spacing:0.1rem;
 }
 
 .report_des dd{
     padding: 0 0 60px;
+    line-height: 2rem;
+    letter-spacing: 0.05rem;
+    font-size: 1.15rem;
 }
 
 .report_list li a {
