@@ -27,10 +27,6 @@ common.css
     text-align: center;
 }
 
-.recipe_image img{
-    width: 100%;
-}
-
 .recipe_category{
     color: #878787;
     padding: 16px 0 0 0;
@@ -48,6 +44,35 @@ common.css
     letter-spacing: 0.01rem;
     line-height: 1.5rem;
     padding:8px 0 0 0;
+}
+
+.recipe_image{
+    background-color: var(--red);
+    overflow: hidden;
+}
+
+.recipe_image img{
+    width: 100%;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.recipe_list a:hover .recipe_image img{
+    opacity: .5;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.recipe_list a:hover dt{
+    color: var(--red);
+}
+
+.recipe_list a:hover dd{
+    text-decoration: underline;
+    color: var(--red);
 }
 
 /*

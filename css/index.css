@@ -33,7 +33,7 @@ index.css
     font-size: 1.5rem;
 }
 
-.contents_text_link:hover{
+.contents_text_link a:hover{
     text-decoration: underline;
 }
 
